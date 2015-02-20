@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Submitted videos
+
+	ul 
+
+		for video in videos
+			li #{video.name} 
+			li #{video.url} 
+			li #{video.title} 
+			li #{video.description} 
+			br
+	

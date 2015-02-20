@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Best Videos
+	
+	h1 Make your submission
+	form(action="/submitContest", method="post")
+		input(type="text", name="name", placeholder="Artist")
+		input(type="url", name="url", placeholder="Web Address")
+		input(type="text", name="title", placeholder="Title")
+		input(type="text", name="description", placeholder="Description")
+		input(type="submit")
